@@ -1,5 +1,7 @@
 server:
   port: 8081
+  servlet:
+    context-path: /account
 dubbo:
   protocol:
     name: dubbo
@@ -10,3 +12,10 @@ dubbo:
 spring:
   application:
     name: share-buy-account
+rocketmq:
+  name-server: 127.0.0.1:9876
+  producer:
+    group: share_buy_account_producer
+    send-message-timeout: 3000
+    retry-times-when-send-failed: 3
+    retry-times-when-send-async-failed: 3

@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @since 2022/12/27
  */
 @EnableDubbo
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"cn.sincerity.sharebuy"})
 public class AccountApplication {
 
     public static void main(String[] args) {

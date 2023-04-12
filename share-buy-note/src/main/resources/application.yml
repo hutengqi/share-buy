@@ -12,3 +12,10 @@ dubbo:
 spring:
   application:
     name: share-buy-note
+rocketmq:
+  name-server: 127.0.0.1:9876
+  producer:
+    group: share_buy_note_producer
+    send-message-timeout: 3000
+    retry-times-when-send-failed: 3
+    retry-times-when-send-async-failed: 3
