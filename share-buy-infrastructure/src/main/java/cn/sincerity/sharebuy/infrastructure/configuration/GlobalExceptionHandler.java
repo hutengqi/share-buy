@@ -1,5 +1,6 @@
 package cn.sincerity.sharebuy.infrastructure.configuration;
 
+import cn.sincerity.sharebuy.infrastructure.http.ResponseEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
@@ -16,7 +17,7 @@ public class GlobalExceptionHandler {
 
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(value = Exception.class)
-    public String exceptionHandler(Exception e) {
-        return e.getMessage();
+    public ResponseEntity<?> exceptionHandler(Exception e) {
+        return ResponseEntity.failure(e.getMessage());
     }
 }
