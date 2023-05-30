@@ -1,4 +1,4 @@
-package cn.sincerity.sharebuy.infrastructure.configuration;
+package cn.sincerity.sharebuy.infrastructure.configuration.persist;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Configuration;

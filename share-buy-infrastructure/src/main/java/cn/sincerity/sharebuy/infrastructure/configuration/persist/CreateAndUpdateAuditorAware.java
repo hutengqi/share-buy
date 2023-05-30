@@ -1,4 +1,4 @@
-package cn.sincerity.sharebuy.infrastructure.security;
+package cn.sincerity.sharebuy.infrastructure.configuration.persist;
 
 import org.springframework.data.domain.AuditorAware;
 import org.springframework.stereotype.Component;

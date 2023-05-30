@@ -1,4 +1,4 @@
-package cn.sincerity.sharebuy.infrastructure.configuration;
+package cn.sincerity.sharebuy.infrastructure.configuration.persist;
 
 import cn.hutool.core.util.IdUtil;
 import org.hibernate.HibernateException;

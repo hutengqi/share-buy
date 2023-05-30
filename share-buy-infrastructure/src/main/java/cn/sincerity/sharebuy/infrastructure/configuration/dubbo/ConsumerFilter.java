@@ -1,4 +1,4 @@
-package cn.sincerity.sharebuy.infrastructure.dubbo;
+package cn.sincerity.sharebuy.infrastructure.configuration.dubbo;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.common.extension.Activate;

@@ -26,7 +26,7 @@ public class BaseSnowflakeEntity extends BaseEntity {
             strategy = GenerationType.SEQUENCE)
     @GenericGenerator(
             name = "snowflakeIdentifierGenerator",
-            strategy = "cn.sincerity.sharebuy.infrastructure.configuration.SnowflakeIdentifierGenerator")
-    private String id;
+            strategy = "cn.sincerity.sharebuy.infrastructure.configuration.persist.SnowflakeIdentifierGenerator")
+    private Long id;
 }
 
